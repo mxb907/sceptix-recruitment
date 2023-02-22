@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gloock', serif;
+    
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(7, 26, 100, 0.7));
+    background-image: url("websitebackground.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: rgb(243, 99, 33);
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    height: 2px;
+    width:0%;
+    background: #f44336 ;
+    display:block;
+    margin: auto;
+    transition:.3s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: rgb(255, 17, 0);
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 55px;
+    text-decoration: none;
+    color: #f44336;
+}
+.text-box p{
+    font-size: 15px;
+    margin: 10px 0 40px;
+    color: rgb(0, 0, 0);
+
+}
+.btn {
+    display: ruby-text-container;
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+    border: 1px solid rgb(27, 3, 3);
+    padding: 12px 34px;
+    font-size: 14px;
+    background: transparent;
+    position: relative;
+    cursor: crosshair;
+}
+.btn:hover{
+    border:1px solid black ;
+    background-color: black;
+    transition: 0.7s;
+
+}
+nav.fa{
+    display:none
+}
+
+
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px ;
+    }
+    .nav-links ul li{
+        display: block;
+    }    
+    .nav-links{
+        position: absolute;
+        background: #e7c8c6;
+        height: 100vh;
+        width: 90px;
+        top:0;
+        right:0;
+        text-align: left;
+        z-index:2;
+    }
+    nav.fa{
+        display: block;
+        color: wheat;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 25px;
+    }
+
+}
+.about{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 35px;
+    font-weight: 600;
+}
+p{
+    color: #f44336;
+    font-size: 18px;
+    padding: 10px;
+    font-weight: 300;
+    line-height: 22px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.benefit-col{
+    flex-basis: 31%;
+    background: lightblue;
+    border-radius:10px;
+    margin-bottom: 5%;
+    padding:20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin:10px;
+}
+.benefit-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.8);
+}
+.benefits{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+    
+}
+@media(max-width:700px){
+    .row{
+        flex-direction:column ;
+    }
+}
+.history{
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    padding-top:30px;    
+}
+.alternatives{
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    padding-top:30px;
+
+}
+.alt-columns{
+    flex-basis:32% ;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    justify-content: space-between;
+    width: 80px;
+}
+
+
+.history-img{
+    border-image-width: auto;
+    padding: 100px;
+
+}
+.GNU{
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    padding-top:30px; 
+}
+ 
+.linuxlogo{
+    width: 30%;
+    position: absolute;
+    top:30px;
+    margin: 0px auto;
+}
+.footer{
+    color: #e7c8c6;
+    margin-top: 150px;
+    width:auto;
+    padding:100px 15%;
+    background: #151313;
+    display: flex;
+}
+.footer div{
+    text-align: center;
+}
+.col-2{
+    flex-grow: 2;
+}
+.footer div h3{
+    font-weight: 300;
+    margin-bottom: 50px;
+    letter-spacing: 0.5px;
+}
